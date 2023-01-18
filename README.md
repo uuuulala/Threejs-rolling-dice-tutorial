@@ -1,54 +1,37 @@
-*How to use this template:*
+# Dice roller with Three.js and cannon-es
 
-- The general styles for the demo page are in css/base.css
-- The README.md can be used to add credits of resources used
-- For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' in the final version and leave the following (fill in title/description, credits and social links, we'll do the rest):
+Demo for the tutorial on how to code a dice cube and realistic dice roller
 
--------
+![Box preview](./preview/dice-preview-github.gif)
 
-# The Title
+[Article on Codrops]()
 
-*A description of the demo goes here.*
-
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
-
-[Article on Codrops](https://tympanus.net/codrops/?p=)
-
-[Demo](http://tympanus.net/Development/.../)
-
+[Demo]()
 
 ## Installation
 
-Install dependencies:
+No package manager / build system is needed.
+You can run the page as it is on local server (any web server, really).
 
-```
-npm install
-```
+The page is using the following libs:
 
-Compile the code for development and start a local server:
+1) Three.js + their addons OrbitControls and mergeBufferGeometries.
+   https://threejs.org/docs/#manual/en/introduction/Installation
 
-```
-npm start
-```
+2) cannon-es
+   https://github.com/pmndrs/cannon-es
 
-Create the build:
-
-```
-npm run build
-```
-
-## Credits
-
-- Images from [Unsplash](https://unsplash.com/)
+Both tools are added as JS modules via CDN with import map. Other installation options are available (see the links above)
 
 ## Misc
 
-Follow *Author*: [Twitter](), [Dribbble](), [Google+](), [GitHub]() 
+Follow Ksenia: [Twitter](https://twitter.com/uuuuuulala), [Codepen](https://codepen.io/ksenia-k), [website](https://ksenia-k.com/)
 
-Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
+Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops)
+, [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
 ## License
+
 [MIT](LICENSE)
 
 Made with :blue_heart:  by [Codrops](http://www.codrops.com)
