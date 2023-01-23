@@ -3,46 +3,40 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Demoname | Demo 1 | Codrops</title>
-		<!-- Generate Meta Tags via https://www.opengraph.xyz -->
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<title>Three.js Dice Roller | Codrops</title>
+		<meta name="description" content="Demo for the tutorial on how to code a dice roller with Three.js and cannon-es" />
+		<meta name="keywords" content="3d dice, three.js, cannon-es, webgl, rolling dice" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 	</head>
-	<body class="demo-1">
+	<body>
 		<main>
 			<div class="frame">
 				<div class="frame__title"> 
-					<h1 class="frame__title-main">Title</h1> 
-					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p="> 
+					<h1 class="frame__title-main">Three.js Dice Roller</h1> 
+					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=69521"> 
 						<span class="oh__inner">Back to the article</span> 
 						<svg width="18px" height="18px" viewBox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
 						</svg>
 					</a>
 				</div>
-				<a class="frame__prev" href="">Previous demo</a>
+				<a class="frame__prev" href="https://tympanus.net/Development/TwistedText/">Previous demo</a>
 			</div>
 			<div class="content">
 				<canvas id="canvas"></canvas>
 				<div class="ui-controls">
-					<div class="score">
-						score: <span id="score-result"></span>
-					</div>
-					<div class="tips">
-						<div>double tap to throw the dices</div>
-						<div>pan & zoom if the dice rolled too far</div>
-					</div>
-					<button id="roll-btn">
-						roll again
-					</button>
+					<div class="score">Score: <span id="score-result"></span></div>
+					<ul class="tips">
+						<li>double tap to throw the dices</li>
+						<li>pan & zoom if the dice rolled too far</li>
+					</ul>
+					<button id="roll-btn">Throw the dice</button>
 				</div>
 			</div>
 		</main>
-
 		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 		<script type="importmap">
 		  {
@@ -52,7 +46,7 @@
 			}
 		  }
 		</script>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
 		<script type="module" src="./js/main.js"></script>
-
 	</body>
 </html>

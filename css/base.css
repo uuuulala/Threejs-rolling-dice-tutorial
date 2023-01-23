@@ -6,9 +6,9 @@
 
 :root {
 	font-size: 16px;
-	--color-text: #111;
-	--color-bg: #fff;
-	--color-link: #aaa;
+	--color-text: #000;
+	--color-bg: #ddd;
+	--color-link: #888;
 	--color-link-hover: #000;
 }
 
@@ -19,6 +19,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	height: 100vh;
 }
 
 /* Page Loader */
@@ -191,40 +192,39 @@ canvas {
 	width: 100%;
 	max-width: 500px;
 	padding: 10px;
-	font-family: sans-serif;
+	font-family: inherit;
 	user-select: none;
+	line-height: 1.5;
+}
 
-	/*display: none;*/
+.score {
+	font-weight: bold;
 }
 
 .ui-controls #score-result {
 	display: inline-block;
 	min-width: 1.8em;
-	border-bottom: 2px solid #111;
+	color: #d45f2e;
 }
 .ui-controls #score-result:after {
 	content: "\200b";
 }
-.ui-controls .tips {
-	font-size: .75em;
-	padding-top: 1em;
-}
 .ui-controls #roll-btn {
-	background-color: #111111;
+	background-color: #273e9a;
+	font-weight: bold;
 	color: #ffffff;
 	border: none;
 	padding: 1em 1.5em;
+	border-radius: 1.5em;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	margin: .5em 0 0 0;
-	transform: translate(0%, 0);
-	transition: transform .3s ease-in-out;
+	margin: 2em 0 0 0;
+	transition: background-color 0.2s, transform 0.1s;
 }
 .ui-controls #roll-btn:active {
-	transform: translate(0%, 50%);
-	background-color: #111111;
+	transform: translateY(2px);
 }
 .ui-controls #roll-btn:hover {
-	background-color: #444444;
+	background-color: #3737af;
 }
