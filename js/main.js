@@ -128,7 +128,7 @@ function createDice() {
     const body = new CANNON.Body({
         mass: 1,
         shape: new CANNON.Box(new CANNON.Vec3(.5, .5, .5)),
-        sleepTimeLimit: .2
+        sleepTimeLimit: .1
     });
     physicsWorld.addBody(body);
 
