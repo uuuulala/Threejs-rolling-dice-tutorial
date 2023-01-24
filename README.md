@@ -2,7 +2,7 @@
 
 Demo for the tutorial on how to code a dice cube and realistic dice roller
 
-![Box preview](./preview/dice-preview-github.gif)
+![Box preview](./preview/dice-preview.gif)
 
 [Article on Codrops]()
 
