@@ -195,6 +195,7 @@ canvas {
 	font-family: inherit;
 	user-select: none;
 	line-height: 1.5;
+	padding: 10px;
 }
 
 .score {
