@@ -4,9 +4,9 @@ Demo for the tutorial on how to code a dice cube and realistic dice roller
 
 ![Box preview](./preview/dice-preview.gif)
 
-[Article on Codrops]()
+[Article on Codrops](https://tympanus.net/codrops/?p=69521)
 
-[Demo]()
+[Demo](http://tympanus.net/Tutorials/DiceRoller/)
 
 ## Installation
 
