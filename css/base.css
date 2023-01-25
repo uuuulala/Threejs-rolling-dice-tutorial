@@ -120,6 +120,7 @@ main {
 	grid-template-areas: 'title prev sponsor';
 	justify-content: start;
 	grid-gap: 2rem;
+	z-index: 1000;
 }
 
 .frame a:not(.frame__title-back) {
