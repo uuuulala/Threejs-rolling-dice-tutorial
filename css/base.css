@@ -92,6 +92,12 @@ a:focus-visible {
 	background: transparent;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
 .unbutton {
 	background: none;
 	border: 0;
@@ -109,11 +115,10 @@ a:focus-visible {
 	color: var(--color-title);
 	padding: 1.5rem;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 'title prev sponsor';
 	justify-content: start;
-	margin-bottom: 3rem;
 	grid-gap: 2rem;
 }
 
@@ -121,7 +126,6 @@ a:focus-visible {
 	white-space: nowrap;
 	overflow: hidden;
 	position: relative;
-	display: inline-block;
 }
 
 .frame a:not(.frame__title-back)::before {
@@ -171,13 +175,8 @@ a:focus-visible {
 }
 
 .content {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
+	flex: 1;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -189,9 +188,9 @@ canvas {
 
 .ui-controls {
 	position: relative;
+	margin-top: 25vh;
 	width: 100%;
 	max-width: 500px;
-	padding: 10px;
 	font-family: inherit;
 	user-select: none;
 	line-height: 1.5;
