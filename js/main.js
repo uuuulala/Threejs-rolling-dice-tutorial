@@ -4,7 +4,6 @@ import * as THREE from 'three';
 import {MapControls} from 'three/addons/controls/OrbitControls.js';
 import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
 
-const container = document.querySelector('.content');
 const canvasEl = document.querySelector('#canvas');
 const scoreResult = document.querySelector('#score-result');
 const rollBtn = document.querySelector('#roll-btn');
@@ -25,7 +24,7 @@ initPhysics();
 initScene();
 
 window.addEventListener('resize', updateSceneSize);
-container.addEventListener('dblclick', throwDice);
+window.addEventListener('dblclick', throwDice);
 rollBtn.addEventListener('click', throwDice);
 
 function initScene() {
@@ -40,7 +39,7 @@ function initScene() {
 
     scene = new THREE.Scene();
 
-    camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, .1, 300)
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, .1, 300)
     camera.position.set(0, .5, 4).multiplyScalar(7);
 
     updateSceneSize();
@@ -294,9 +293,9 @@ function render() {
 }
 
 function updateSceneSize() {
-    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
 function throwDice() {
