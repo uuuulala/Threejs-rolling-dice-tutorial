@@ -1,14 +1,13 @@
 import * as CANNON from 'https://cdn.skypack.dev/cannon-es';
 
 import * as THREE from 'three';
-import {MapControls} from 'three/addons/controls/OrbitControls.js';
 import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
 
 const canvasEl = document.querySelector('#canvas');
 const scoreResult = document.querySelector('#score-result');
 const rollBtn = document.querySelector('#roll-btn');
 
-let renderer, scene, camera, orbit, diceMesh, physicsWorld;
+let renderer, scene, camera, diceMesh, physicsWorld;
 
 const params = {
     numberOfDice: 2,
@@ -54,10 +53,7 @@ function initScene() {
     topLight.shadow.camera.near = 5;
     topLight.shadow.camera.far = 400;
     scene.add(topLight);
-
-    orbit = new MapControls(camera, canvasEl);
-    orbit.enableDamping = true;
-
+    
     createFloor();
     diceMesh = createDiceMesh();
     for (let i = 0; i < params.numberOfDice; i++) {
